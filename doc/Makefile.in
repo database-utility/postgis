@@ -456,6 +456,7 @@ requirements_not_met_xsltproc:
 	@echo
 	@echo "  http://postgis.net/documentation"
 	@echo
+	false
 
 requirements_not_met_xmllint:
 	@echo
@@ -466,6 +467,7 @@ requirements_not_met_xmllint:
 	@echo
 	@echo "  http://postgis.net/documentation"
 	@echo
+	false
 
 requirements_not_met_xslbase:
 	@echo
@@ -477,15 +479,18 @@ requirements_not_met_xslbase:
 	@echo
 	@echo "  http://postgis.net/documentation"
 	@echo
+	false
 
 requirements_not_met_gettext:
 	@echo
 	@echo "configure was unable to find both gettext's 'msgmerge' utility program."
 	@echo "To update the translation templates, install gettext and then re-run configure."
 	@echo
+	false
 
 requirements_not_met_xml2pot:
 	@echo
 	@echo "configure was unable to find the 'xml2pot' utility program."
 	@echo "To update the translation templates, install poxml and then re-run configure."
 	@echo
+	false
