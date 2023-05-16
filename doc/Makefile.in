@@ -263,6 +263,13 @@ chunked-html: postgis-out.xml Makefile images $(XML_INPUTS)
 		$(CHUNK_HTML_DOCBOOK_XSL) \
 		$<
 
+chunked-html-dbu: postgis-out.xml Makefile images $(XML_INPUTS)
+	$(XSLTPROC) $(XSLTPROC_COMMONOPTS) \
+		--param toc.max.depth 9 \
+		--output html/ \
+		dbu.xsl \
+		$<
+
 chunked-html-web: postgis-out.xml Makefile images $(XML_INPUTS)
 	$(XSLTPROC) $(XSLTPROC_COMMONOPTS) \
 		--output html/ \
